@@ -1,0 +1,2 @@
+1. The bug was that `num1` and `num2` were interpreted as strings and therefore instead of integer addition, the `+` operation in `calculateSum` resulted in string concatenation and therefore causing `result` to also be of type `string`. This is against the desired behavior of adding the two integers entered into the two inputs.
+2. I would fix the problem by typecasting the strings into integers using `parseInt()`, and conduct the `+` operation after the types of `num1` and `num2` have been converted.
